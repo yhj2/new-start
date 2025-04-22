@@ -1,0 +1,5 @@
+<!--pages/lianxiren/lianxiren.wxml-->
+<text>pages/lianxiren/lianxiren.wxml</text>
+<view>11111</view>
+<mp-icon type="field" icon="add" color="black" size="{{25}}"></mp-icon>
+<mp-icon icon="add" color="black" size="{{25}}"></mp-icon>
