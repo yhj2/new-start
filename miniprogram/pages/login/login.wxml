@@ -1,25 +1,27 @@
 <!--pages/login/login.wxml-->
-
+<view class="parent">
 <form catchsubmit="formSubmit" catchreset="formReset" >
   <view class="container">
         <label class="flex-item item0">
       手机号登录
     </label>
-    <label class="flex-item item1">
-      账号：<input class="weui-input" auto-focus placeholder="输入手机号" bindfocus="onInputFocus" bindblur="onInputBlur" />
+    <label class="flex-item item1 {{isFocused1 ? 'active' : ''}}">
+      账号：<input data-type="phone" class="weui-input"  placeholder="输入手机号" bindfocus="onInputFocus" bindblur="onInputBlur" />
     </label>
 
 
-     <label class="flex-item item1">
-        密码：<input class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
+     <label class="flex-item item1 {{isFocused2 ? 'active' : ''}}">
+        密码：<input data-type="password" class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
     </label>
 
 
 
-    <label class="flex-item {{inputFocused ? 'item2' : 'item3'}}">
+    <label class="flex-item {{isFocused ? 'item2' : 'item3'}}">
       <button style="margin: 30rpx 0" type="primary" formType="submit">登录</button>
     </label>
 
   </view>
   
 </form>
+</view>
+

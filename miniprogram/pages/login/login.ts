@@ -5,22 +5,53 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputFocused:false
+    isFocused:false,
+    isFocused1:false,
+    isFocused2:false
+
   },
-  formSubmit(){},
+  formSubmit(){
+    wx.switchTab({
+      url: '/pages/shouxie/shouxie',  
+    });
+  },
   formReset(){},
-  onInputFocus(){
-    this.setData({
-      inputFocused: true // 动态更新对应状态
-    });
-    console.log("onInputFocus")
+  onInputFocus(e:any){
+    const type = e.currentTarget.dataset.type; // 获取输入框类型
+   
+      // 根据不同类型执行不同操作
+      if (type === 'phone') {
+        this.setData({
+          isFocused1: true,
+          isFocused: true
+        });
+        // 执行手机号输入框特有的逻辑
+      } else if (type === 'password') {
+        this.setData({
+          isFocused2: true ,
+          isFocused: true 
+        });
+      }
   },
-  onInputBlur()
+  onInputBlur(e:any)
   {
-    this.setData({
-      inputFocused: false // 动态更新对应状态
-    });
-    console.log("onInputBlur")
+
+    const type = e.currentTarget.dataset.type; // 获取输入框类型
+   
+      // 根据不同类型执行不同操作
+      if (type === 'phone') {
+        this.setData({
+          isFocused1: false ,
+          isFocused: false 
+        });
+        // 执行手机号输入框特有的逻辑
+      } else if (type === 'password') {
+        this.setData({
+          isFocused2: false ,
+          isFocused: false 
+
+        });
+      }
   },
 
   /**

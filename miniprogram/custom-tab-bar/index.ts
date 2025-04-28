@@ -1,7 +1,7 @@
 // custom-tab-bar/index.ts
 Component({
   data: {
-    showTabBar: false,
+    showTabBar: true,
     selected: 0,
     color: "#2c2c2c",
     selectedColor: "#1296db",
