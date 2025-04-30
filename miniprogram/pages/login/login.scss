@@ -7,10 +7,10 @@
   height: 100vh;
   background-color: #efefef;
 }
-.container{
+.container1{
   display: flex;
   width: 90vw;
-  height: 100vh;
+  height: 85vh;
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
@@ -84,4 +84,8 @@
 }
 .aa{
   color:#5555ff
+}
+.bb{
+  display: flex;
+  justify-content:space-between;
 }

@@ -1,7 +1,7 @@
 <!--pages/login/login.wxml-->
 <view class="parent">
 <form catchsubmit="formSubmit" catchreset="formReset" >
-  <view class="container">
+  <view class="container1">
         <label class="flex-item item0">
       手机号登录
     </label>
@@ -13,7 +13,7 @@
      <label class="flex-item item1 {{isFocused2 ? 'active' : ''}}" style="position: relative; left: 0rpx; top: -2rpx">
         密码：<input data-type="password" class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
     </label>
-    <view class="item4"  >验证码登录</view>
+    <view class="item4"  ><a class="aa">验证码登录</a></view>
 
  
 
@@ -23,7 +23,11 @@
     <view class="flex-item {{isFocused ? 'item2' : 'item3'}}">
     <view>
     <button style="margin: 30rpx 0" type="primary" formType="submit">登录</button>
-      <view>找回密码   注册</view>
+      <view class="bb"><a class="aa">找回密码</a><a class="aa">注册</a></view><van-divider />
+      <van-tag type="primary">标签</van-tag>
+<van-tag type="success">标签</van-tag>
+<van-tag type="danger">标签</van-tag>
+<van-tag type="warning">标签</van-tag>
       </view>
       
     </view>
