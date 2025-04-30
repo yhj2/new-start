@@ -12,7 +12,7 @@
   width: 90vw;
   height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
 
 }
@@ -23,6 +23,7 @@
     flex-direction: row;  /* 垂直排列子元素 */
     justify-content: center; /* 垂直居中 */
     white-space: nowrap;
+    background-color: rgb(179, 25, 25);
 }
 
 .item0{
@@ -73,4 +74,14 @@
   width: 100%;
   font-size: 16px;
   background-color:#efefef;
+}
+.item4{
+  flex:1;
+  display: flex;
+  width:100%;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+.aa{
+  color:#5555ff
 }

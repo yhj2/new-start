@@ -13,13 +13,17 @@
      <label class="flex-item item1 {{isFocused2 ? 'active' : ''}}" style="position: relative; left: 0rpx; top: -2rpx">
         密码：<input data-type="password" class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
     </label>
+    <view class="item4"  >验证码登录</view>
+
+ 
+
 
 
 
     <view class="flex-item {{isFocused ? 'item2' : 'item3'}}">
     <view>
     <button style="margin: 30rpx 0" type="primary" formType="submit">登录</button>
-      找回密码   注册
+      <view>找回密码   注册</view>
       </view>
       
     </view>
