@@ -4,7 +4,8 @@
     "pages/shouxie/shouxie",
     "pages/lianxiren/lianxiren",
     "pages/wode/wode",
-    "pages/pengyouquan/pengyouquan"
+    "pages/pengyouquan/pengyouquan",
+    "pages/register/register"
   ],
   "tabBar": {
     "custom": true,

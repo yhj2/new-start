@@ -6,14 +6,26 @@
       手机号登录
     </label>
     <label class="flex-item item1 {{isFocused1 ? 'active' : ''}}">
-      账号：<input data-type="phone" class="weui-input"  placeholder="输入手机号" bindfocus="onInputFocus" bindblur="onInputBlur" />
+      <view style="flex:1">账号：</view><input bindinput="onUsernameInput"  name="username" value="{{name}}" style="flex:3" data-type="phone" class="weui-input"  placeholder="输入手机号" bindfocus="onInputFocus" bindblur="onInputBlur" />
     </label>
 
 
-     <label class="flex-item item1 {{isFocused2 ? 'active' : ''}}" style="position: relative; left: 0rpx; top: -2rpx">
-        密码：<input data-type="password" class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
+     <label wx:if="{{!verifyCode}}" class="flex-item item1 {{isFocused2 ? 'active' : ''}}" style="position: relative; left: 0rpx; top: -2rpx">
+        <view style="flex:1">密码：</view><input bindinput="onPasswordInput" value="{{password}}"  name="password" style="flex:3" data-type="password" class="weui-input" password type="text" placeholder="输入密码" bindfocus="onInputFocus" bindblur="onInputBlur"/>
     </label>
-    <view class="item4"  ><a class="aa">验证码登录</a></view>
+         <label wx:if="{{verifyCode}}" class="flex-item item1 {{isFocused3 ? 'active' : ''}}" style="position: relative; left: 0rpx; top: -2rpx">
+       <view style="flex:1.2">验证码：</view><input value="{{code}}" name="code" style="flex:2" data-type="code" class="weui-input"  type="text" placeholder="输入验证码" bindfocus="onInputFocus" bindblur="onInputBlur"/><button 
+  class="mini-btn" 
+  type="default" 
+  size="mini"
+  bindtap="getVerificationCode"
+  disabled="{{isCounting}}"
+  style="flex:1"
+>
+  {{ isCounting ? countdownSecond + 's后重试' : '获取验证码' }}
+</button>
+    </label>
+    <view class="item4"  ><a class="aa" bindtap="handleAuthTap">{{ verifyCode === true ? '密码登录' : '验证码登录' }}</a></view>
 
  
 
@@ -22,12 +34,9 @@
 
     <view class="flex-item {{isFocused ? 'item2' : 'item3'}}">
     <view>
-    <button style="margin: 30rpx 0" type="primary" formType="submit">登录</button>
-      <view class="bb"><a class="aa">找回密码</a><a class="aa">注册</a></view><van-divider />
-      <van-tag type="primary">标签</van-tag>
-<van-tag type="success">标签</van-tag>
-<van-tag type="danger">标签</van-tag>
-<van-tag type="warning">标签</van-tag>
+    <view style="color:grey;font-size:28rpx">上述手机号仅用于登录验证</view>
+    <button style="margin: 30rpx auto; width: 300rpx; position: relative; left: 0rpx; top: 3rpx" type="primary" formType="submit">登录</button>
+      <view class="bb"><a class="aa">找回密码</a><view class="divider"></view><a class="aa" bindtap="handleRegister">注册</a></view>
       </view>
       
     </view>

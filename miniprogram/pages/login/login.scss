@@ -10,7 +10,7 @@
 .container1{
   display: flex;
   width: 90vw;
-  height: 85vh;
+  height: 95vh;
   flex-direction: column;
   justify-content:space-between;
   align-items: center;
@@ -28,7 +28,7 @@
 
 .item0{
   background-color: #efefef;
-  flex:1;
+  flex:1.5;
   align-items: center;     /* 水平居中 */
   font-size: 40rpx;
 }
@@ -76,7 +76,7 @@
   background-color:#efefef;
 }
 .item4{
-  flex:1;
+  flex:0.5;
   display: flex;
   width:100%;
   justify-content:flex-start;
@@ -88,4 +88,10 @@
 .bb{
   display: flex;
   justify-content:space-between;
+}
+.divider {
+  width: 1rpx;          /* 竖线宽度（推荐用 rpx 单位） */
+  height: 50rpx;        /* 竖线高度 */
+  background-color: #ccc; /* 颜色 */
+  margin: 0 20rpx;      /* 左右间距 */
 }

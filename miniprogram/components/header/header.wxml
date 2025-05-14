@@ -1,0 +1,9 @@
+<!--components/header/header.wxml-->
+<view class="parent">
+<view class="aa" style="font-size:35rpx">{{title}}</view>
+<view class="bb">
+<van-icon  name="search" size="30px"/>
+<van-icon  name="add-o" size="30px"/>
+</view>
+
+</view>

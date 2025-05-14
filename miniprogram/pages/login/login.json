@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "van-divider": "@vant/weapp/divider/index",
-    "van-tag": "@vant/weapp/tag/index"
+    "van-tag": "@vant/weapp/tag/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-progress": "@vant/weapp/progress/index"
   }
 }
