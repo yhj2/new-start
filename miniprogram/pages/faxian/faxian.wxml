@@ -1,4 +1,4 @@
-<!--pages/pengyouquan/pengyouquan.wxml-->
+<!--pages/faxian/faxian.wxml-->
 <view class="parent">
 <header  title="发现"></header>
 <view class="body"></view>

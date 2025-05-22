@@ -1,2 +1,5 @@
 <!--pages/wode/wode.wxml-->
-<text>pages/wode/wode.wxml</text>
+<view class="parent">
+<header  title="我的"></header>
+<view class="body"></view>
+</view>

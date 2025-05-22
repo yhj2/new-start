@@ -3,5 +3,6 @@
   "projectname": "new-start",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.8.4"
 }

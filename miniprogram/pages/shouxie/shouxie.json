@@ -1,5 +1,5 @@
 {
-  "usingComponents": {
-    "header":"/components/header/header"
-  }
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#e1e1e1"
 }

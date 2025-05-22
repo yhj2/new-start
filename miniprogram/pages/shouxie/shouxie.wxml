@@ -1,5 +1,5 @@
 <!--pages/shouxie/shouxie.wxml-->
 <view class="parent">
 <header  title="微信(86)"></header>
-<view class="body"></view>
+<view class="body">0000000</view>
 </view>

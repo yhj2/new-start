@@ -1,15 +1,10 @@
-// pages/shouxie/shouxie.ts
+// pages/faxian/faxian.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  onPullDownRefresh() {
-    console.log('下拉刷新触发');
-    
 
   },
 
@@ -31,12 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    if (typeof this.getTabBar === 'function' &&
-    this.getTabBar()) {
-    this.getTabBar().setData({
-      selected: 0
-    })
-  }
+
   },
 
   /**

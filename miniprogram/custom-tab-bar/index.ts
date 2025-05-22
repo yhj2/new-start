@@ -17,11 +17,11 @@ Component({
       text: "联系人"
     },
     {
-      pagePath: "/pages/pengyouquan/pengyouquan",
-      iconPath: "/image/global-trade-fill.png",
-      selectedIconPath: "/image/global-trade-fill-hl.png",
-      text: "朋友圈"
-    },
+        pagePath: "/pages/faxian/faxian",
+        iconPath: "/image/global-trade-fill.png",
+        selectedIconPath: "/image/global-trade-fill-hl.png",
+        text: "发现"
+      },
     {
       pagePath: "/pages/wode/wode",
       iconPath: "/image/customer-bussinessman.png",
@@ -36,6 +36,7 @@ Component({
     switchTab(e:any) {
       const data = e.currentTarget.dataset
       const url = data.path
+      console.log(data)
       wx.switchTab({url})
       this.setData({
         selected: data.index
